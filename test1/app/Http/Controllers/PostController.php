@@ -50,7 +50,7 @@ class PostController extends Controller
             'content'   => $request->content
         ]);
 
-        return redirect()->route('posts.index')->with(['success'=>'Data berhasil di simpan'])
+        return redirect()->route('posts.index')->with(['success'=>'Data berhasil di simpan']);
     }
 
 }
