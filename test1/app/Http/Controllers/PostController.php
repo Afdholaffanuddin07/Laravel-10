@@ -41,7 +41,7 @@ class PostController extends Controller
             'content' => 'required|min:10'  
         ]);
 
-        $image = request->file('image');
+        $image = $request->file('image');
         $image->storeAs('public/posts', $image->hashName());
 
         Post::create([
